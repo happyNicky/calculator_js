@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculator</title>
+    <link rel="stylesheet" href="calculator.css">
+</head>
+<body>
+    <div class="topContainer">
+        <div id="option">
+            <h1 id="top"></h1>
+            <h4 class="scroled_option">Calculator</h4>
+            <div class="scroled_option" id="standard">Standard</div>
+            <div class="scroled_option" id="scientific">Scientific</div>
+            <h4 class="scroled_option">Converter</h4>
+            <div class="scroled_option" id="volume">Volume</div>
+            <div class="scroled_option" id="length">Length</div>
+            <div class="scroled_option" id="weightandmass">Weight and Mass</div>
+            <div class="scroled_option" id="temperature">Temperature</div>
+            <div class="scroled_option" id="energy">Energy</div>
+            <div class="scroled_option" id="area">Area</div>
+            <div class="scroled_option" id="speed">Speed</div>
+            <div  class="scroled_option" id="time">Time</div>
+            <div class="scroled_option" id="power">Power</div>
+            <div class="scroled_option" id="pressure">Pressure</div>
+            <div class="scroled_option" id="angle">Angle</div>
+
+            <div id="settings"> Settings</div>
+        </div>
+        <div class="standard_calculator">
+        <button id="burgerMenu">≡</button>
+        <button id="minimize" onclick="minimize()">↗</button>
+        <div class="contaniner">
+                <div class="inputs">
+                    <input id="upperInput" value=0 readonly>
+                    <input id="bottomInput"  value=0 >
+                </div>
+                <div id="buttons">
+                    <button id="b0" onclick="appendToDisplay(0)"></button>
+                    <button id="b1" onclick="appendToDisplay(1)"></button>
+                    <button id="b2" onclick="appendToDisplay(2)"></button>
+                    <button id="b3" onclick="appendToDisplay(3)"></button>
+                    <button id="b4" onclick="appendToDisplay(4)"></button>
+                    <button id="b5" onclick="appendToDisplay(5)"></button>
+                    <button id="b6" onclick="appendToDisplay(6)"></button>
+                    <button id="b7" onclick="appendToDisplay(7)"></button>
+                    <button id="b8" onclick="appendToDisplay(8)"></button>
+                    <button id="b9" onclick="appendToDisplay(9)"></button>
+                    <button id="b10" onclick="appendToDisplay(10)"></button>
+                    <button id="b11" onclick="appendToDisplay(11)"></button>
+                    <button id="b12" onclick="appendToDisplay(12)"></button>
+                    <button id="b13" onclick="appendToDisplay(13)"></button>
+                    <button id="b14" onclick="appendToDisplay(14)"></button>
+                    <button id="b15" onclick="appendToDisplay(15)"></button>
+                    <button id="b16" onclick="appendToDisplay(16)"></button>
+                    <button id="b17" onclick="appendToDisplay(17)"></button>
+                    <button id="b18" onclick="appendToDisplay(18)"></button>
+                    <button id="b19" onclick="appendToDisplay(19)"></button>
+                    <button id="b20" onclick="appendToDisplay(20)"></button>
+                    <button id="b21" onclick="appendToDisplay(21)"></button>
+                    <button id="b22" onclick="appendToDisplay(22)"></button>
+                    <button id="b23" onclick="appendToDisplay(23)"></button> 
+                </div>
+               
+
+       </div>
+       
+    </div>
+    <div id="topHistory">
+        <div class="historyandmemory">
+       
+            <div id="history" onclick="history()">History</div>
+            <div id="memory" onclick="history()">Memory</div>
+        </div>
+        <div id="historyValue">
+         
+        </div>
+    </div>
+</div>
+    <script  src="calculator.js"></script>
+</body>
+</html>
